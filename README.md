@@ -21,6 +21,6 @@ TRIGGER = 20 # Number of consecutive idle checks
 
 ```
 
-In order to get chat id, add your bot from telegram app and simply send <b>alter</b> to the telegram group so it will now where to send logs. Remember it is only open to allowed user.
+In order to get chat id, add your bot from telegram app and simply send <b>alter</b> to the telegram group. It will know where to send idle logs. Remember it is only allowed to ALLOWED_USER.
 
 Use with your own care. This may not be the solution if you are on production.
