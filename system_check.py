@@ -22,9 +22,9 @@ def check_status():
 
     while True:
         if count == trigger:
-            logging.info("Closing\n")
             time_elapsed = trigger * wakeup_time
-            tgbot.send_message("The instance is idle for {} minutes {} seconds\n".format(time_elapsed // 60, time_elapsed % 60))
+            tgbot.send_message("{} is idle for {} minutes {} seconds\n".format(
+                os.uname()[1], time_elapsed // 60, time_elapsed % 60))
             count = 0
 
         if mem_active() or cpu_active() or gpu_active():
