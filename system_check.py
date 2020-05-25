@@ -65,9 +65,7 @@ def cpu_active():
 
 def gpu_active():
 
-    # print("r_val {}".format(r_val))
-    # proc=Popen("nvidia-smi", stdout=PIPE, stderr=PIPE)
-    proc=Popen("zibalos", shell=True, stdout=PIPE, stderr=DEVNULL)
+    proc=Popen("nvidia-smi", shell=True, stdout=PIPE, stderr=DEVNULL)
     output=proc.communicate()[0]
 
     if proc.returncode != 0:
